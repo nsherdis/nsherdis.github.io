@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+/*body {
+  margin: 30px;
+}*/
+h1 {
+  margin-bottom: 15px;
+  font-size: 1.75em;
+  text-align: center;
+  font-family: Georgia, Times, sans-serif;
+}
+
+h2 {
+  margin: 0;
+  padding: 5px 10px;
+  text-align: center;
+  font-family: Georgia, Times, sans-serif;
+  color: white;
+
+  font-size: 1.25em;
+  border: 1px solid black;
+  position: relative;
+  float: right;
+  top: 0;
+  right: 0;
+}
+
+/* Assigning bg colors to H2 */
+#h2_1 {
+  background-color: #5f554e;
+}
+#h2_2 {
+  background-color: #8c6d4c;
+}
+#h2_3 {
+  background-color: #5b432c;
+}
+
+p {
+  width: 100%;
+  font-family: Helvetica;
+  margin: 0px;
+  padding: 15px 20px 20px 20px;
+  color: white;
+  clear: right;
+}
+
+/* Responsive Columns */
+#row {
+  overflow: visible;
+  width: 100%;
+}
+
+/* Responsive Columns */
+/*.column {
+  margin: 10px;
+}*/
+
+/* Desktop */
+@media (min-width: 992px) {
+  .col-lg-4 {
+    float: left;
+    border: 1px solid black;
+    background-color: #A52A2A;
+    width: 33%;
+/*    margin: 10px;*/
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+ .col-md-6, .col-md-12 {
+    float: left;
+    border: 1px solid black;
+    background-color: #A52A2A;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .col-sm-12 {
+    float: left;
+    border: 1px solid black;
+    background-color: #A52A2A;
+    width: 100%;
+/*    margin: 10px;*/
+  }
+}
